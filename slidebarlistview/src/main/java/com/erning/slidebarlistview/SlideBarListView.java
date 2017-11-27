@@ -17,7 +17,7 @@ import android.widget.ListView;
  * Created by 二宁 on 17-11-26.
  */
 public class SlideBarListView extends ListView {
-    private static String TAG = "MyListView";
+    private static String TAG = "SlideBarListView";
 
     //滑动条背景画笔
     private Paint slideBackPaint = new Paint();
@@ -91,7 +91,7 @@ public class SlideBarListView extends ListView {
         slideFontPaint.setTypeface(Typeface.create("System", Typeface.BOLD));
         slideFontPaint.setTextAlign(Paint.Align.CENTER);
 
-        rect = new RectF(windowWidth-margin-padding-fontSize-padding,margin,windowWidth-margin,windowHeight-margin);
+        rect = new RectF(windowWidth-margin-padding-fontSize-padding,margin,windowWidth-margin,windowHeight-margin+10);
 
         Paint.FontMetrics fm = slideFontPaint.getFontMetrics();
         float fontHeight = fm.descent - fm.ascent;
@@ -143,7 +143,7 @@ public class SlideBarListView extends ListView {
                 slideFontPaint.setColor(color_font_select);
                 invalidate();
 
-                float absHeight = ev.getY() - margin - margin;
+                float absHeight = ev.getY() - margin;
                 int position = (int) (absHeight/oneHeight);
                 if (onSlideBarChangeLintener != null){
                     onSlideBarChangeLintener.OnSlideBarChange(position,latter[position]);
@@ -169,7 +169,7 @@ public class SlideBarListView extends ListView {
         }
         if (ev.getAction() == MotionEvent.ACTION_MOVE){
             if (isSlideBarTouch && ev.getY()>=margin && ev.getY()<=windowHeight-margin){
-                float absHeight = ev.getY() - margin - margin;
+                float absHeight = ev.getY() - margin;
                 int position = (int) (absHeight/oneHeight);
                 if (position>=latter.length){
                     position = latter.length-1;
