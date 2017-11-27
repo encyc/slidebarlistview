@@ -1,4 +1,6 @@
 # slidebarlistview
+演示：<br/>
+<image src="img/img.gif" /><br/>
 暂时没有仓库，下载slidebarlistview作为Module使用<br/>
 你需要：<br/>
 allprojects {<br/>
