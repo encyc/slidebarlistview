@@ -31,3 +31,5 @@ setColor_font_select：设置选中时的文字颜色(dp)<br/>
 <br/>
 一个Adapter继承自SimpleSlideBarListAdapter，也可以直接使用SimpleSlideBarListAdapter(context，List\<String>)<br/>
 如果继承SimpleSlideBarListAdapter只需重写getView()即可<br/>
+<br/>
+拼音转化部分参考了 http://itred.cnblogs.com<br/>
