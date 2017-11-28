@@ -24,10 +24,10 @@ setFontSize：设置字体大小(dp)<br/>
 setMargin：设置外边距(dp)<br/>
 setPadding：设置内边距(dp)<br/>
 setRound：设置圆角弧度(dp)<br/>
-setColor_back_unselect：设置没有选中时的背景颜色(dp)<br/>
-setColor_back_select：设置选中时的背景颜色(dp)<br/>
-setColor_font_unselect：设置没有选中时的文字颜色(dp)<br/>
-setColor_font_select：设置选中时的文字颜色(dp)<br/>
+setColor_back_unselect：设置没有选中时的背景颜色<br/>
+setColor_back_select：设置选中时的背景颜色<br/>
+setColor_font_unselect：设置没有选中时的文字颜色<br/>
+setColor_font_select：设置选中时的文字颜色<br/>
 <br/>
 一个Adapter继承自SimpleSlideBarListAdapter，也可以直接使用SimpleSlideBarListAdapter(context，List\<String>)<br/>
 如果继承SimpleSlideBarListAdapter只需重写getView()即可<br/>
